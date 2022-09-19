@@ -222,6 +222,9 @@ h2 {
 .hideMe {
     opacity: 0; 
 }
+#rightBottom {
+    font-size: 14px;
+}
 @font-face {
   font-family: 'icomoon';
   src:  url('fonts/icomoon.eot?wamt8s');

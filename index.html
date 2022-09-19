@@ -98,10 +98,18 @@
     <li class="hideMe"><a href="https://www.instagram.com/gukai1998/" class="icon-instagram" title="Instagram"></a></li>
     <li class="hideMe"><a href="https://www.linkedin.com/in/%E5%B3%BB%E6%84%B7-%E9%A1%A7-157670235/" class="icon-linkedin" title="Linkedin"></a></li>
   </ul>
+  <p id="rightBottom">Page impression: <span id="count"></span></p>
   <p class="copyRight"><small>Copyrights (c) Alex Ku All Right Reserved.</small></p>
+  
 </footer>
 <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
 <script src="./load.js"></script>
 <script src="easeSlide.js"></script>
+<script>
+  if (!localStorage.visit)
+      localStorage.visit = 0;
+    localStorage.visit = parseInt(localStorage.visit) + 1;
+    document.getElementById('count').textContent = localStorage.visit;
+</script>
 </body>
 </html>
